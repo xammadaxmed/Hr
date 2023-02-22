@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="empadmin.master.cs" Inherits="emplyee_empmaster" %>
+
+<!DOCTYPE html>
+<HTML>
+<script src="JavaScript.js"></script>
+	<HEAD><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+        height: 30px;
+        width: 175px;
+        font-weight: 700;
+    }
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+</style>
+        <script src="JavaScript.js"></script>
+		<title>HRM</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	    <style type="text/css">
+            .auto-style1
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 18px;
+                padding: 3px;
+                background-color: #FFFFFF;
+                width: 264px;
+                height: 28px;
+            }
+            .auto-style2
+            {
+                width: 100%;
+            }
+        </style>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+      
+
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+		<form id="Form1" method="post" runat="server">
+			<TABLE id="Table1" style="Z-INDEX: 105; LEFT: 0px; WIDTH: 944px; POSITION: absolute; TOP: 0px; HEIGHT: 429px"
+				cellSpacing="1" cellPadding="1" width="944" border="0" borderColor="#6b85a0">
+				<TR>
+					<TD style="HEIGHT: 2px" colSpan="2">
+						<asp:Image id="Image1" runat="server" ImageUrl="~\pictures\bannerfinal.jpg" Width="119%"></asp:Image></TD>
+				</TR>
+				<TR>
+					<TD align="left" class="auto-style1">
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" style="text-align: center; font-weight: 700" Text="LogOut" Width="87px" />
+                    </TD>
+					<TD align="left" rowspan="2">
+						<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <table cellpadding="0" cellspacing="0" class="auto-style2">
+                                <tr>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </table>
+                        </asp:ContentPlaceHolder>
+                    </TD>
+				</TR>
+				<TR>
+					<TD height="285" align="center" vAlign="top" style="WIDTH: 264px" class="sidebar">
+                        &nbsp;<br />
+                  
+
+<div class="vertical-menu">
+  <a href="emplmain.aspx" class="active">Home</a>
+  <asp:hyperlink id="Hyperlink2" runat="server" 
+										NavigateUrl="EmpData.aspx">Create Logins</asp:hyperlink>
+ 
+    <asp:hyperlink id="hlEmpPosition" runat="server" Width="176px" NavigateUrl="EmpPositionDefault.aspx"
+										Font-Bold="True">New Position Type(s)</asp:hyperlink><asp:hyperlink id="hlEmpLeaveVacation" runat="server" Width="176px" NavigateUrl="EmpLeaveVacationDefault.aspx"
+										Font-Bold="True"> New Leave \ Vacation Type</asp:hyperlink><asp:hyperlink id="hlEmpContract" runat="server" Width="176px" NavigateUrl="EmpContractDefault.aspx"
+										Font-Bold="True">Employee Contract Details</asp:hyperlink>
+
+    <asp:hyperlink id="hlEmpSetPosition" runat="server" Width="176px" NavigateUrl="EmpPositionOwnDefault.aspx"
+										Font-Bold="True">Employee Position</asp:hyperlink><asp:hyperlink id="HlEmpQualification" runat="server" Width="176px" NavigateUrl="EmpQualificationDefault.aspx"
+										Font-Bold="True">Employee Qualification </asp:hyperlink>
+    <asp:hyperlink id="HlDepartment" runat="server" Width="176px" NavigateUrl="EmpDepartmentDefault.aspx"
+										Font-Bold="True">Department Details</asp:hyperlink>
+    <asp:hyperlink id="hlDesignation" runat="server" Width="176px" NavigateUrl="EmpDesignationDefault.aspx"
+										Font-Bold="True">Designation Details</asp:hyperlink>
+
+        <asp:HyperLink id="HyperLink4" runat="server" Font-Bold="True" NavigateUrl="EmpExtraDuties.aspx">Employee Extra Duities</asp:HyperLink>
+
+        <asp:HyperLink id="HyperLink5" runat="server" Font-Bold="True" NavigateUrl="EmpHistroy.aspx">Employee history</asp:HyperLink>
+   <asp:HyperLink id="HyperLink1" runat="server" Font-Bold="True" NavigateUrl="EmpLoan.aspx">Employee Loan</asp:HyperLink>
+     <asp:HyperLink ID="HyperLink6" runat="server" Font-Bold="True" NavigateUrl="EmpAppraisal01.aspx" Width="176px">Fill Employee Appraisal Form</asp:HyperLink>
+</div> </TD>
+				</TR>
+				<TR>
+					<TD height="19" align="center" style="WIDTH: 264px" class="sidebar"></TD>
+					<TD align="center" style="WIDTH: 933px">
+						&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD height="26" align="center" style="WIDTH: 264px" class="sidebar"></TD>
+					<TD align="center" style="WIDTH: 933px">
+						&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD style="WIDTH: 264px" align="center" class="sidebar"></TD>
+					<TD  style="WIDTH:50px" align="center">
+						<P style="height:50px">
+							<asp:Image id="Image6" runat="server" ImageUrl="~/pictures/marqui-enterprise-colour-bands-footer.png"></asp:Image>
+
+						</P>
+					</TD>
+				</TR>
+			</TABLE>
+		</form>
+	</body>
+</HTML>
+
